@@ -86,9 +86,9 @@ class GoPro:
     def KeepAlive(self):
         """Sends keep alive packet"""
         if self._camera_model_name == "HERO8 Black" or self._camera_model_name == "HERO9 Black":
-            keep_alive_payload = "_GPHD_:1:0:2:0.000000\n".encode()
+            keep_alive_payload = b"_GPHD_:1:0:2:0.000000\n"
         else:
-            keep_alive_payload = "_GPHD_:0:0:2:0.000000\n".encode()
+            keep_alive_payload = b"_GPHD_:0:0:2:0.000000\n"
 
         while True:
             sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -137,13 +137,13 @@ class GoPro:
             _timeout = self._timeout
 
         if param != "" and value == "":
-            uri = "%s%s/%s/%s" % ("https://" if _isHTTPS else "http://",
+            uri = "{}{}/{}/{}".format("https://" if _isHTTPS else "http://",
                                   self.ip_addr, path, param)
         elif param != "" and value != "":
-            uri = "%s%s/%s/%s/%s" % ("https://" if _isHTTPS else "http://",
+            uri = "{}{}/{}/{}/{}".format("https://" if _isHTTPS else "http://",
                                      self.ip_addr, path, param, value)
         elif param == "" and value == "":
-            uri = "%s%s/%s" % ("https://" if _isHTTPS else "http://",
+            uri = "{}{}/{}".format("https://" if _isHTTPS else "http://",
                                self.ip_addr, path)
         if self._camera == constants.Camera.Interface.Auth:
             return urllib.request.urlopen(uri, timeout=_timeout, context=_context).read()
