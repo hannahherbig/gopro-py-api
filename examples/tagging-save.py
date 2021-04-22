@@ -1,5 +1,7 @@
-from goprocam import GoProCamera, constants
 import json
+
+from goprocam import GoProCamera, constants
+
 gpCam = GoProCamera.GoPro(constants.gpcontrol)
 
 ## This script will download videos from the camera that have hilight tags in them and create a json file containing the tag location in milliseconds with each video 

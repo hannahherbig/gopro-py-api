@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
-from goprocam import GoProCamera
-from goprocam import constants
+
+from goprocam import GoProCamera, constants
+
 cascPath="/usr/share/opencv/haarcascades/haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 gpCam = GoProCamera.GoPro()

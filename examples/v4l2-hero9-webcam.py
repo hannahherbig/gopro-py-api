@@ -1,6 +1,8 @@
 import sys
-from goprocam import GoProCamera, constants
+
 import ffmpeg
+
+from goprocam import GoProCamera, constants
 
 print("Run modprobe v4l2loopback device=1 video_nr=44 card_label=\"GoPro\" exclusive_caps=1")
 input("Hit enter when done!")

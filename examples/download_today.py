@@ -1,6 +1,7 @@
-from goprocam import GoProCamera, constants
 import argparse
 import datetime
+
+from goprocam import GoProCamera, constants
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--video', "-v", help='Download videos only', required=False, type=bool)

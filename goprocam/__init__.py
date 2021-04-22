@@ -1,2 +1,1 @@
-from goprocam import GoProCamera
-from goprocam import constants
+from goprocam import GoProCamera, constants

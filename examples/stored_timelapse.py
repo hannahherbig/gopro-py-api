@@ -1,5 +1,5 @@
-from goprocam import GoProCamera
-from goprocam import constants
+from goprocam import GoProCamera, constants
+
 gopro = GoProCamera.GoPro()
 TIMER=5
 COUNT=0

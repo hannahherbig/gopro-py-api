@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
-from goprocam import GoProCamera
-from goprocam import constants
+
+from goprocam import GoProCamera, constants
+
 vidcap = cv2.VideoCapture("udp://10.5.5.9:8554")
 success,image = vidcap.read()
 success = True

@@ -1,11 +1,13 @@
 #This is the script without the need of a FFmpeg installation, pure OpenCV
 #This is not useful for image processing (eg: find faces) as there will be more lag, around 6 seconds added.
+import socket
+from time import time
+
 import cv2
 import numpy as np
-from time import time
-import socket
-from goprocam import GoProCamera
-from goprocam import constants
+
+from goprocam import GoProCamera, constants
+
 gpCam = GoProCamera.GoPro()
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 t=time()

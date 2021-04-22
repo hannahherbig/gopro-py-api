@@ -1,5 +1,5 @@
-from goprocam import GoProCamera
-from goprocam import constants
+from goprocam import GoProCamera, constants
+
 ## Test 1: Dump all info
 gpCam = GoProCamera.GoPro()
 print(gpCam.getStatus(constants.Status.Status,constants.Status.STATUS.Mode))

@@ -1,4 +1,5 @@
 from goprocam import GoProCamera, constants
+
 gopro = GoProCamera.GoPro()
 
 ## Downloads the video between 2 hilight tags

@@ -1,6 +1,7 @@
-from signal import signal, SIGINT
-from goprocam import GoProCamera, constants
 import sys
+from signal import SIGINT, signal
+
+from goprocam import GoProCamera, constants
 
 gopro = GoProCamera.GoPro(ip_address=GoProCamera.GoPro.getWebcamIP(
     sys.argv[1]), camera=constants.gpcontrol, webcam_device=sys.argv[1])
