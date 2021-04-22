@@ -48,13 +48,12 @@ class Camera:
     SerialNumber = "serial_number"
 
     class Interface:
-        Auth = 'auth'
-        GPControl = 'gpcontrol'
+        Auth = "auth"
+        GPControl = "gpcontrol"
 
 
 class Clip:
-    TranscodeStage = ["started", "in progress",
-                      "complete", "canceled", "failed"]
+    TranscodeStage = ["started", "in progress", "complete", "canceled", "failed"]
     R1080p = "0"
     R960p = "1"
     R720p = "2"
@@ -93,6 +92,7 @@ class Stream:
         S8 = "8"
         S15 = "15"
         S30 = "30"
+
     IDR_INTERVAL = "61"
 
     class IDRInterval:
@@ -100,6 +100,7 @@ class Stream:
         IDR1 = "1"
         IDR2 = "2"
         IDR4 = "4"
+
     BIT_RATE = "62"
 
     class BitRate:
@@ -115,6 +116,7 @@ class Stream:
         B2_4Mbps = "2400000"
         B2_5Mbps = "2500000"
         B4Mbps = "4000000"
+
     WINDOW_SIZE = "64"
 
     class WindowSize:
@@ -229,6 +231,7 @@ class Setup:
         A5Min = "4"
         A15Min = "6"
         A30Min = "7"
+
     GPS = "83"
 
     class MapLocate:
@@ -240,11 +243,13 @@ class Setup:
     class VoiceControl:
         ON = "1"
         OFF = "0"
+
     WAKE_ON_VOICE = "104"
 
     class WakeOnVoice:
         ON = "1"
         OFF = "0"
+
     WIFI = "63"
 
     class Wifi:
@@ -257,6 +262,7 @@ class Setup:
     class Display:
         ON = "1"
         OFF = "0"
+
     LANDSCAPE_LOCK = "112"
 
     class LandscapeLock:
@@ -286,6 +292,7 @@ class Video:
         R5_6KSPH = "21"
         R3KSPH = "22"
         R5K = "24"
+
     FRAME_RATE = "3"
 
     class FrameRate:
@@ -301,6 +308,7 @@ class Video:
         FR15 = "11"
         FR12 = "12"
         FR200 = "13"
+
     FOV = "4"
 
     class Fov:
@@ -309,11 +317,13 @@ class Video:
         Narrow = "2"
         SuperView = "3"
         Linear = "4"
+
     ASPECT_RATION = "108"
 
     class AspectRatio:
         AP4by3 = "0"
         AP16by9 = "1"
+
     LOW_LIGHT = "8"
 
     class LowLight:
@@ -342,6 +352,7 @@ class Video:
         Interval10Min = "2"
         Interval30Min = "3"
         Interval60Min = "4"
+
     VIDEO_TIMELAPSE_INTERVAL = "5"
 
     class VideoTimeLapseInterval:
@@ -352,6 +363,7 @@ class Video:
         I10 = "4"
         I30 = "5"
         I60 = "6"
+
     TIMEWARP_SPEED = "111"
 
     class TimeWarpSpeed:
@@ -360,6 +372,7 @@ class Video:
         TW10x = "9"
         TW15x = "0"
         TW30x = "1"
+
     VIDEO_EIS = "78"
 
     class VideoEIS:
@@ -444,17 +457,20 @@ class Video:
         M1 = "6"
         M1_5 = "7"
         M2 = "8"
+
     AUDIO_TRACK = "96"
 
     class AudioTrack:
         ON = "1"
         OFF = "0"
+
     SHORT_CLIP_LENGTH = "107"
 
     class ShortClipLength:
         OFF = "0"
         L15s = "1"
         L30s = "2"
+
     MAX_HYPERSMOOTH = "148"
 
     class MaxHypersmooth:
@@ -511,6 +527,7 @@ class Photo:
         R12M = "8"
         R12N = "9"
         R18SPH = "12"
+
     SPOT_METER = "20"
 
     class SpotMeter:
@@ -546,11 +563,13 @@ class Photo:
     class RawPhoto:
         ON = "1"
         OFF = "0"
+
     RAW_NIGHT_PHOTO = "98"
 
     class RawNightPhoto:
         ON = "1"
         OFF = "0"
+
     PROTUNE_PHOTO = "21"
 
     class ProTune:
@@ -610,17 +629,20 @@ class Photo:
         M1 = "6"
         M1_5 = "7"
         M2 = "8"
+
     HDR_PHOTO = "100"
 
     class HDR:
         OFF = "0"
         ON = "1"
+
     SUPER_PHOTO = "109"
 
     class SuperPhoto:
         OFF = "0"
         Auto = "1"
         HDROnly = "2"
+
     PHOTO_TIMER = "105"
 
     class PhotoTimer:
@@ -635,6 +657,7 @@ class Lens:
     class Source:
         FRONT = "0"
         BACK = "1"
+
     MODE = "142"
 
     class Mode:
@@ -658,6 +681,7 @@ class Multishot:
         R12M = "8"
         R12N = "9"
         R18SPH = "12"
+
     SPOT_METER = "33"
 
     class SpotMeter:
@@ -775,11 +799,13 @@ class Multishot:
         M1 = "6"
         M1_5 = "7"
         M2 = "8"
+
     RAW_TIMELAPSE = "94"
 
     class RawTimelapse:
         ON = "1"
         OFF = "0"
+
     RAW_NIGHTLAPSE = "99"
 
     class RawNightlapse:
@@ -833,11 +859,13 @@ class Hero3Commands:
         class Orientation:
             UP = "00"
             DOWN = "01"
+
         SPOT_METER = "EX"
 
         class SpotMeter:
             ON = "01"
             OFF = "00"
+
         VIDEO_PHOTO_INTERVAL = "PN"
 
         class VideoPhotoInterval:
@@ -846,6 +874,7 @@ class Hero3Commands:
             PN10Sec = "02"
             PN30Sec = "03"
             PN1Min = "04"
+
         LOOPING_VIDEO = "LO"
 
         class LoopingVideo:
@@ -854,11 +883,13 @@ class Hero3Commands:
             LO20Min = "02"
             LO60Min = "03"
             LOMAX = "05"
+
         PROTUNE = "PT"
 
         class ProTune:
             ON = "1"
             OFF = "0"
+
         # The following settings are for HERO3 Black/HERO3+ Black only.
         WHITE_BALANCE = "WB"
 
@@ -868,24 +899,28 @@ class Hero3Commands:
             WB5500k = "02"
             WB6500k = "03"
             WBRaw = "04"
+
         # The following settings are for HERO3+ Black only.
         COLOR_PROFILE = "CO"
 
         class ColorProfile:
             GoPro = "00"
             Flat = "01"
+
         ISO = "GA"
 
         class Iso:
             ISO6400 = "00"
             ISO1600 = "01"
             ISO400 = "02"
+
         SHARPNESS = "SP"
 
         class Sharpness:
             High = "00"
             Med = "01"
             Low = "02"
+
         EXPOSURE_COMP = "EV"
 
         class EvComp:
@@ -907,27 +942,32 @@ class Hero3Commands:
             Photo = "01"
             Burst = "02"
             TimeLapse = "03"
+
         ONE_BTN_MODE = "OB"
 
         class OneButtonMode:
             ON = "1"
             OFF = "0"
+
         NTSC = "VM"
 
         class VideoFormatMode:
             ON = "0"
             OFF = "1"
+
         ON_SCREEN_DISP = "OS"
 
         class OnScreenDisplay:
             ON = "1"
             OFF = "0"
+
         LED = "LB"
 
         class StatusLight:
             OFF = "00"
             ON_2 = "01"
             ON_4 = "02"
+
         BEEP = "BS"
 
         class Beep:
@@ -947,6 +987,7 @@ class Hero3Commands:
         V960p = "02"
         V720p = "01"
         V480p = "00"
+
     FRAME_RATE = "FS"
 
     class FrameRate:
@@ -961,6 +1002,7 @@ class Hero3Commands:
         FPS100 = "08"
         FPS120 = "09"
         FPS240 = "0a"
+
     FOV = "FV"
 
     class Fov:
@@ -978,6 +1020,7 @@ class Hero3Commands:
         PR12MP_W = "05"
         PR7MP_W = "04"
         PR7MP_M = "06"
+
     CONTINOUOUS_RATE = "CS"
 
     class ContRate:
@@ -985,6 +1028,7 @@ class Hero3Commands:
         CS3SPS = "03"
         CS5SPS = "05"
         CS10SPS = "0a"
+
     BURST_RATE = "BU"
 
     class BurstRate:
@@ -994,6 +1038,7 @@ class Hero3Commands:
         BU30_1 = "04"
         BU30_2 = "05"
         BU30_3 = "06"
+
     TIMELAPSE_RATE = "TI"
 
     class TimeLapseRate:

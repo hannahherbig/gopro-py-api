@@ -6,8 +6,11 @@ from goprocam import GoProCamera, constants
 
 
 def take_photo(interface):
-    gopro = GoProCamera.GoPro(ip_address=GoProCamera.GoPro.getWebcamIP(
-        interface), camera=constants.gpcontrol, webcam_device=interface)
+    gopro = GoProCamera.GoPro(
+        ip_address=GoProCamera.GoPro.getWebcamIP(interface),
+        camera=constants.gpcontrol,
+        webcam_device=interface,
+    )
     while True:
         gopro.take_photo()
         time.sleep(2)

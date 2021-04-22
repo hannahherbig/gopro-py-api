@@ -21,16 +21,18 @@ NightLapse configuration left untouched, I recommend always using Auto shutter f
 
 
 def start_timelapse(interface):
-    gopro = GoProCamera.GoPro(ip_address=GoProCamera.GoPro.getWebcamIP(
-        interface), camera=constants.gpcontrol, webcam_device=interface)
-    logging.info(
-        f"Started goprocam instance with interface {interface}")
-    gopro.gpControlSet(constants.Setup.VOICE_CONTROL,
-                       constants.Setup.VoiceControl.OFF)
+    gopro = GoProCamera.GoPro(
+        ip_address=GoProCamera.GoPro.getWebcamIP(interface),
+        camera=constants.gpcontrol,
+        webcam_device=interface,
+    )
+    logging.info(f"Started goprocam instance with interface {interface}")
+    gopro.gpControlSet(constants.Setup.VOICE_CONTROL, constants.Setup.VoiceControl.OFF)
     gopro.gpControlSet(constants.Setup.AUTO_OFF, constants.Setup.AutoOff.Never)
     logging.info("All config set")
-    gopro.mode(constants.Mode.MultiShotMode,
-               constants.Mode.SubMode.MultiShot.NightLapse)
+    gopro.mode(
+        constants.Mode.MultiShotMode, constants.Mode.SubMode.MultiShot.NightLapse
+    )
     gopro.shutter(constants.start)
     logging.info("Started timelapse")
 
