@@ -17,7 +17,7 @@ if arrayLength % 2 == 0:
     for tag in splitArray:
         startMs = tag[0]
         stopMs = tag[1]
-        print("\n[START ms] %s\n[STOP  ms] %s" % (startMs, stopMs))
+        print(f"\n[START ms] {startMs}\n[STOP  ms] {stopMs}")
         fileName = "{}/{}".format(
             gpCam.getMediaInfo("folder"), gpCam.getMediaInfo("file")
         )
