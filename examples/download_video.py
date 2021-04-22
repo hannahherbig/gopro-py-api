@@ -9,4 +9,3 @@ for i in videos_duration:
 	print("Recording " + str(i) + " seconds video")
 	gpCam.downloadLastMedia(gpCam.shoot_video(i), custom_filename="VIDEO_"+str(i)+".MP4")
 	time.sleep(2)
-	

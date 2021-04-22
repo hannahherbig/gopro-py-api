@@ -17,7 +17,7 @@ if arrayLength % 2 == 0:
         stopMs = tag[1]
         print("\n[START ms] %s\n[STOP  ms] %s" %
               (startMs, stopMs))
-        fileName = "%s/%s" % (gpCam.getMediaInfo("folder"),
+        fileName = "{}/{}".format(gpCam.getMediaInfo("folder"),
                               gpCam.getMediaInfo("file"))
         videoId = gpCam.getClip(fileName, constants.Clip.R1080p,
                                 constants.Clip.FPS_NORMAL, str(startMs), str(stopMs))
@@ -36,8 +36,8 @@ if arrayLength % 2 == 0:
         print("Downloading %s" % download)
         try:
             gpCam.downloadLastMedia(
-                path=url, custom_filename="output/%s_%s_%s" % (startMs, stopMs, download[0].replace("TRV", "MP4")))
+                path=url, custom_filename="output/{}_{}_{}".format(startMs, stopMs, download[0].replace("TRV", "MP4")))
         except(Exception) as e:
             time.sleep(2)
             gpCam.downloadLastMedia(
-                path=url, custom_filename="output/%s_%s_%s" % (startMs, stopMs, download[0].replace("TRV", "MP4")))
+                path=url, custom_filename="output/{}_{}_{}".format(startMs, stopMs, download[0].replace("TRV", "MP4")))

@@ -23,7 +23,7 @@ def start_timelapse(interface):
     gopro = GoProCamera.GoPro(ip_address=GoProCamera.GoPro.getWebcamIP(
         interface), camera=constants.gpcontrol, webcam_device=interface)
     logging.info(
-        "Started goprocam instance with interface {}".format(interface))
+        f"Started goprocam instance with interface {interface}")
     gopro.gpControlSet(constants.Setup.VOICE_CONTROL,
                        constants.Setup.VoiceControl.OFF)
     gopro.gpControlSet(constants.Setup.AUTO_OFF, constants.Setup.AutoOff.Never)

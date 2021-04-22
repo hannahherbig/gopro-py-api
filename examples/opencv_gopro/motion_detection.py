@@ -63,7 +63,7 @@ while True:
   t = t_plus
   t_plus = cv2.cvtColor(cam.read()[1], cv2.COLOR_RGB2GRAY)
   if time() - gp_sync_time >= 2.5:
-    sock.sendto("_GPHD_:0:0:2:0.000000\n".encode(), ("10.5.5.9", 8554))
+    sock.sendto(b"_GPHD_:0:0:2:0.000000\n", ("10.5.5.9", 8554))
     gp_sync_time=time()
 
   key = cv2.waitKey(1) & 0xFF

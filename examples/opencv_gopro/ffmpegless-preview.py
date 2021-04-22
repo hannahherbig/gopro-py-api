@@ -17,7 +17,7 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
     if time() - t >= 2.5:
-        sock.sendto("_GPHD_:0:0:2:0.000000\n".encode(), ("10.5.5.9", 8554))
+        sock.sendto(b"_GPHD_:0:0:2:0.000000\n", ("10.5.5.9", 8554))
         t=time()
 # When everything is done, release the capture
 cap.release()
