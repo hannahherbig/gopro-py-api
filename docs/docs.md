@@ -13,10 +13,10 @@
 
   - Sends keep alive packet
 
-- ****init****(self, camera='detect', ip_address='10.5.5.9',
+- \***\*init\*\***(self, camera='detect', ip_address='10.5.5.9',
   mac_address='AA:BB:CC:DD:EE:FF') \* Initialize self. See help(type(self)) for accurate signature.
 
-- ****str****(self)
+- \***\*str\*\***(self)
 
   - Return str(self).
 
@@ -220,9 +220,9 @@
 
 Data descriptors defined here:
 
-- ****dict****
+- \***\*dict\*\***
 
   - dictionary for instance variables (if defined)
 
-- ****weakref****
+- \***\*weakref\*\***
   - list of weak references to the object (if defined)
