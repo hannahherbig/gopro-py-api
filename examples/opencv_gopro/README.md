@@ -6,7 +6,6 @@ Tested with a GoPro HERO4 Black and a computer running Linux. Probably does not 
 
 Needs FFmpeg and OpenCV-Python installed.
 
-Open ```gopro_keepalive.py``` in one terminal and ```gopro_opencv.py``` in a separate terminal.
+Open `gopro_keepalive.py` in one terminal and `gopro_opencv.py` in a separate terminal.
 
 ![](http://i.imgur.com/YXpnhMM.png)
-

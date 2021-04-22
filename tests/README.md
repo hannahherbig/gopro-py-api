@@ -3,10 +3,9 @@
 Connect a fully-charged HERO5 Black with an SD card to your PC and run the tests.
 
     python main.py
-    
 
-````
-konrad@konrad-pc [tests (dev)]: python main.py 
+```
+konrad@konrad-pc [tests (dev)]: python main.py
 test_has_sd_card (__main__.MainTests) ... Needs an SD card
 HERO5 Black
 HD5.02.02.60.00
@@ -56,5 +55,4 @@ ok
 Ran 9 tests in 87.454s
 
 OK
-````
-
+```
