@@ -1,4 +1,5 @@
 import netifaces as ni
+
 from goprocam import GoProCamera, constants
 
 ifaces = ni.interfaces()

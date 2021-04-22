@@ -1,8 +1,10 @@
+import urllib.request
+
 import cv2
 import numpy as np
-from goprocam import GoProCamera
-from goprocam import constants
-import urllib.request
+
+from goprocam import GoProCamera, constants
+
 cascPath="/usr/share/opencv/haarcascades/haarcascade_frontalface_default.xml"
 eyePath="/usr/share/opencv/haarcascades/haarcascade_eye.xml"
 eye_cascade = cv2.CascadeClassifier(eyePath)

@@ -1,7 +1,8 @@
 import sys
-import time
-from goprocam import GoProCamera, constants
 import threading
+import time
+
+from goprocam import GoProCamera, constants
 
 
 def take_photo(interface):

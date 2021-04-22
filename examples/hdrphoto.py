@@ -1,5 +1,5 @@
-from goprocam import GoProCamera
-from goprocam import constants
+from goprocam import GoProCamera, constants
+
 gopro = GoProCamera.GoPro(constants.gpcontrol) #HERO4/5 only.
 
 gopro.mode(constants.Mode.PhotoMode, constants.Mode.SubMode.Photo.Single)

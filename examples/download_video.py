@@ -1,5 +1,7 @@
-from goprocam import GoProCamera, constants
 import time
+
+from goprocam import GoProCamera, constants
+
 gpCam = GoProCamera.GoPro()
 
 videos_duration=[10,30,60,120,180]

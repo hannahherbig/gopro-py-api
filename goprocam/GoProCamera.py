@@ -1,20 +1,20 @@
-import time
-import socket
-import urllib.request
-import json
-import re
-from goprocam import constants
+import base64
 import datetime
+import http
+import json
+import math
+import re
+import socket
+import ssl
 import struct
 import subprocess
-from socket import timeout
-from urllib.error import HTTPError
-from urllib.error import URLError
-import http
-import math
-import base64
 import sys
-import ssl
+import time
+import urllib.request
+from socket import timeout
+from urllib.error import HTTPError, URLError
+
+from goprocam import constants
 
 
 class GoPro:

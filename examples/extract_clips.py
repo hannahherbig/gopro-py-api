@@ -1,6 +1,9 @@
 import time
+
 import numpy as np
+
 from goprocam import GoProCamera, constants
+
 gpCam = GoProCamera.GoPro()
 
 # Extracts clips from latest video

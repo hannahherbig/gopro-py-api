@@ -1,8 +1,9 @@
-import sys
-import time
-from goprocam import GoProCamera, constants
-import threading
 import logging
+import sys
+import threading
+import time
+
+from goprocam import GoProCamera, constants
 
 """
 I use PM2 to start my GoPro cameras, using a Raspberry Pi 4, works perfectly.

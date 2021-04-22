@@ -1,6 +1,8 @@
-import unittest
-from goprocam import GoProCamera, constants
 import time
+import unittest
+
+from goprocam import GoProCamera, constants
+
 # Assumes an up-to-date HERO5 Black is connected!!!
 
 RESP_OK = '{}\n'

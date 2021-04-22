@@ -1,10 +1,11 @@
-import cv2                            # importing Python OpenCV
-from datetime import datetime         # importing datetime for naming files w/ timestamp
-import socket
-from goprocam import GoProCamera
-from goprocam import constants
-from time import time
 import argparse
+import socket
+from datetime import datetime  # importing datetime for naming files w/ timestamp
+from time import time
+
+import cv2  # importing Python OpenCV
+
+from goprocam import GoProCamera, constants
 
 gpCam = GoProCamera.GoPro()
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)

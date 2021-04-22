@@ -1,12 +1,14 @@
-from glitch_this import ImageGlitcher
-from goprocam import GoProCamera, constants
-import tweepy
-import time
 import logging
-from wifi import Cell, Scheme
 import os
+import time
+
 import cv2
 import numpy as np
+import tweepy
+from glitch_this import ImageGlitcher
+from wifi import Cell, Scheme
+
+from goprocam import GoProCamera, constants
 
 keys = dict(
     TWITTER_CONSUMER_KEY="...",
