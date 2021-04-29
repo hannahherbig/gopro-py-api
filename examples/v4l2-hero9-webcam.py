@@ -15,7 +15,7 @@ gopro = GoProCamera.GoPro(
 )
 gopro.webcamFOV(constants.Webcam.FOV.Wide)
 gopro.startWebcam()
-udp_stream = "udp://{}:8554".format(GoProCamera.GoPro.getWebcamIP(sys.argv[1]))
+udp_stream = f"udp://{GoProCamera.GoPro.getWebcamIP(sys.argv[1])}:8554"
 stream = ffmpeg.input(
     udp_stream, vsync=2, fflags="nobuffer", flags="low_delay", probesize=3072
 )
